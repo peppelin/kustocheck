@@ -11,3 +11,5 @@ coverage.xml
 report.xml
 
 .env
+
+.idea
