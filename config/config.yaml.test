@@ -1,0 +1,13 @@
+pats:
+ github: "github token"
+ ado: "azure token"
+repos:
+ - url: "http://google.com"
+   folders:
+    - "folder"
+ - url: "http://github.com"
+   folders:
+    - "folder 1"
+    - "folder 2"
+    - "folder 3"
+    - "folder 4"

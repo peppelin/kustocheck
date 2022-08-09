@@ -1,0 +1,8 @@
+pats:
+ github: "github token"
+ ado: "azure token"
+ - test:
+repos:
+ - url: "google.com"
+   folders:
+    - "folder"

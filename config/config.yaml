@@ -1,0 +1,15 @@
+pats:
+ github: $GIT_TOKEN
+ ado: $ADO_TOKEN
+repos:
+ - url: "one"
+   folders:
+    - "k8s"
+ - url: "test"
+   folders:
+    - "test operator"
+    - "test operator 2"
+    - "test operator 2"
+    - "test operator 2"
+    - "test operator 2"
+    - "test operator 2"
