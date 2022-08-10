@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-var configFile = "../config/config.yaml"
+var configFile = "config/repos.yaml"
 
 func main() {
 	_, err := files.GetPats(configFile)

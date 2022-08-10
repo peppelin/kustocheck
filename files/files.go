@@ -12,7 +12,6 @@ var ErrInvalidFile = errors.New("invalid file")
 var ErrInvalidYAMLFormat = errors.New("invalid YAML format")
 
 type config struct {
-	Pats  map[string]string
 	Repos []struct {
 		Url     string
 		Folders []string
@@ -20,8 +19,7 @@ type config struct {
 }
 
 func GetPats(file string) (config, error) {
-
-	result := config{}
+	var result config
 
 	data, err := os.ReadFile(file)
 	if err != nil {
