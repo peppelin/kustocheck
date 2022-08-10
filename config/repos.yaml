@@ -1,19 +1,14 @@
 repos:
- - url: "http://github.com"
+ - url: "https://dev.azure.com/schwarzit/schwarzit.stackit-mongodb/_git/stackit-postgres-zalando-postgres-operator"
    folders:
     - "folder 1"
     - "folder 2"
     - "folder 3"
     - "folder 4"
- - url: "http://github.com"
+ - url: "https://dev.azure.com/schwarzit/schwarzit.stackit-mongodb/_git/stackit-postgres-zalando-postgres-operator"
    folders:
     - "folder 1"
-    - "folder 2"
-    - "folder 3"
-    - "folder 4"
- - url: "http://github.com"
+ - url: "https://dev.azure.com/schwarzit/schwarzit.stackit-mongodb/_git/stackit-postgres-zalando-postgres-operator"
    folders:
     - "folder 1"
-    - "folder 2"
-    - "folder 3"
-    - "folder 4"
+
