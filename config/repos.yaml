@@ -1,0 +1,19 @@
+repos:
+ - url: "http://github.com"
+   folders:
+    - "folder 1"
+    - "folder 2"
+    - "folder 3"
+    - "folder 4"
+ - url: "http://github.com"
+   folders:
+    - "folder 1"
+    - "folder 2"
+    - "folder 3"
+    - "folder 4"
+ - url: "http://github.com"
+   folders:
+    - "folder 1"
+    - "folder 2"
+    - "folder 3"
+    - "folder 4"

@@ -10,6 +10,6 @@ coverage.json
 coverage.xml
 report.xml
 
-.env
+env
 
 .idea

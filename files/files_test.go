@@ -3,14 +3,6 @@ package files
 import "testing"
 
 func TestGetPats(t *testing.T) {
-	t.Run("Getting Azure personal token", func(test *testing.T) {
-		result, _ := GetPats("../config/config.yaml.test")
-		got := result.Pats["ado"]
-		want := "azure token"
-		if got != want {
-			test.Errorf("got %q want %s", got, want)
-		}
-	})
 	t.Run("Getting repo url", func(test *testing.T) {
 		result, _ := GetPats("../config/config.yaml.test")
 		got := result.Repos[1].Url

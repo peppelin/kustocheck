@@ -1,3 +1,6 @@
+pats:
+ github: $GIT_TOKEN
+ ado: $ADO_TOKEN
 repos:
  - url: "one"
    folders:
