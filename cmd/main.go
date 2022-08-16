@@ -4,7 +4,8 @@ import (
 	"context"
 	"github.com/microsoft/azure-devops-go-api/azuredevops"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/git"
-	"kustocheck/files"
+	"kustocheck/internal/azure"
+	"kustocheck/internal/files"
 	"log"
 	"os"
 )
@@ -16,6 +17,8 @@ const (
 )
 
 func main() {
+	var dependency files.Dependency
+
 	repos, err := files.ReadConfig(configFile)
 
 	if err != nil {
@@ -32,6 +35,11 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	repos[0].GetInfo(gitClient, ctx)
+	files.InitRepo(repos, gitClient, ctx)
+	for i := 0; i < len(repos); i++ {
+		azure.GetYAMLUrls(&repos[i], gitClient, ctx)
+	}
+	files.Download(repos)
+	dependency.Add("downloads")
 
 }

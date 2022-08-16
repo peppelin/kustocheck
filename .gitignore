@@ -13,3 +13,5 @@ report.xml
 env
 
 .idea
+config/repos.yaml
+downloads
